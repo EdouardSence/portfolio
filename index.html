@@ -5,40 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="stylesheet" href="" />
 <style>
+  
   a {
     text-decoration: none;
   }
 
   body {
+    background-color: black;
     background-image: url(https://i.pinimg.com/originals/9e/54/64/9e5464d7b5ac5d6046dee510f20d33ab.jpg);
+    text-align:center;
   }
 
-  span {
-    float: left;
+
+  p1 {
     color: white;
-    font-size: 24px;
-    border-style: solid;
-    padding: 10px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-
-  span a {
-    color: aqua;
-  }
-
-  p {
+  p2{
     color: white;
-    font-size: 24px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    text-decoration: underline;
+    text-align:center;
+    
   }
 
   #moi {
     float: left;
     padding: 10px;
     border-radius: 100px;
+    width: 16%
   }
 
   h1 {
-    font-size: 100px;
-    padding: 10px;
+    font-size: 5.3vw;
+    padding: 60px;
     padding-top: 0px;
     padding-bottom: 0px;
     margin: auto;
@@ -48,46 +51,38 @@
     border-radius: 500px;
   }
 
-  #HTML {
-    float: left;
-    padding: 10px;
-    border-radius: 100px;
-  }
 
-  #c {
-    float: right;
-    padding: 10px;
-    border-radius: 100px;
-  }
 
   nav {
-    display: flex;
-    justify-content: space-around;
-    font-family: sans-serif;
-  }
+      display: flex;
+      justify-content: space-around;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-  nav p {
-    background-color: transparent;
-    height: 30px;
-  }
+    nav p {
+      background-color: transparent;
+      color: white;
+      font-size: 24px;
+      height: 30px;
+    }
 
-  #carre a {
-    color: grey;
-    text-decoration: none;
-    padding: 10px;
-    align-items: center;
-    font-size: 20px;
-    transition-duration: 1s;
-    font-weight: bold;
-    position: relative;
-  }
+    #carre a {
+      color: grey;
+      text-decoration: none;
+      padding: 10px;
+      align-items: center;
+      font-size: 20px;
+      transition-duration: 1s;
+      font-weight: bold;
+      position: relative;
+    }
 
-  #carre a:hover {
-    background-color: transparent;
-    color: white;
-    border-radius: 30px;
-    background-color: rgba(107, 107, 107, 0.493);
-  }
+    #carre a:hover {
+      background-color: transparent;
+      color: white;
+      border-radius: 30px;
+      background-color: rgba(107, 107, 107, 0.493);
+    }
 
   @media only screen and (max-width: 900px) {
     nav p a {
@@ -99,7 +94,15 @@
 
     nav p {
       width: 100%;
-      margin-top: 0px;
+      margin-top: 10px;
+      margin-bottom: 100px;
+    }
+    #moi {
+    float:none;
+    width: 70%;
+    }
+    p1{
+      font-size: 20px;
     }
   }
 </style>
@@ -108,37 +111,24 @@
 
 <body>
   <div class="">
-    <span><strong>Contact :</strong> <br />adresse e-mail :
-      <a href="mailto:edouard.sence@etu.u-bordeaux.fr">
-        edouard.sence@etu.u-bordeaux.fr</a>
-      <br />téléphone : <a href="tel:+33651370047">06 51 37 00 47</a></span>
     <h1>Edouard SENCE</h1>
+    
     <nav>
       <p id="carre">
-        <a href="index.html">Mes compétences</a>
+        <a href="index.html">Présentation</a>
         <a href="projets.html">Mes Projets</a>
+        <a href="contact.html">Me contacter</a>
       </p>
     </nav>
-    <img id="moi" src="bin/bg.jpg" alt="photo de moi" style="width: 15%" />
-    <p>
+    <img id="moi" src="bin/bg.jpg" alt="photo de moi" />
+    <p1> 
       Étudiant en <strong>informatique</strong> à l'<strong>IUT</strong> de
       <strong>Bordeaux</strong>, actuellement en première année de
-      <strong>BUT</strong>, <br />j'ai acquis diverses compétences :
-    </p>
-    <a href="RETEX/Implémentation d'un besoin client.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%"><img id="HTML"
-        src="bin/Sans titre.png" style="width: 25%" /></a>
-    <p><br /><br />Je maitrise l'HTML 5 et le CSS 3</p>
-    <img id="HTML" src="bin/java.png" style="width: 15%" />
-    <p><br /><br />et principalement le Java</p>
-    <img id="HTML" src="https://qubark.com/wp-content/uploads/2019/01/sql-server_800x600.jpg" style="width: 15%" />
-    <p><br /><br />aussi du SQL server</p>
-    <img id="c"
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/1200px-C_Sharp_wordmark.svg.png"
-      style="width: 15%" />
-    <p style="text-align: right">
-      <br /><br /><br /><br /><br />et le C SHARP
-    </p>
-  </div>
+      <strong>BUT</strong> faisant partie de la promotion <strong>2021-2024</strong>.
+      
+  </br></br><p2>Developpeur en devenir</p2>
+    </p1>
+    
 </body>
 
 </html>

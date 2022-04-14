@@ -1,96 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
-<meta charset="UTF-8" />
-<title>CV de moi</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="" />
-<style>
-  a {
-    text-decoration: none;
-  }
+  <meta charset="UTF-8" />
+  <title>CV de moi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="" />
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+    }
 
-  body {
-    background-image: url(https://i.pinimg.com/originals/9e/54/64/9e5464d7b5ac5d6046dee510f20d33ab.jpg);
-  }
+    body {
+      background-color: black;
+      background-image: url(https://i.pinimg.com/originals/9e/54/64/9e5464d7b5ac5d6046dee510f20d33ab.jpg);
+    }
 
-  span {
-    float: left;
-    color: white;
-    font-size: 24px;
-    border-style: solid;
-    padding: 10px;
-  }
+    span {
+      float: left;
+      color: white;
+      font-size: 24px;
+      border-style: solid;
+      padding: 10px;
+    }
 
-  span a {
-    color: aqua;
-  }
+    span a {
+      color: aqua;
+    }
 
-  p {
-    color: white;
-    font-size: 24px;
-  }
+    p {
+      color: white;
+      font-size: 24px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-  #moi {
-    float: left;
-    padding: 10px;
-    border-radius: 100px;
-  }
+    #moi {
+      float: left;
+      padding: 10px;
+      border-radius: 100px;
+    }
 
-  h1 {
-    font-size: 100px;
-    padding: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: auto;
-    width: 40%;
-    text-align: center;
-    background-color: aliceblue;
-    border-radius: 500px;
-  }
+    h1 {
+      font-size: 5.3vw;
+      padding: 60px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin: auto;
+      width: 40%;
+      text-align: center;
+      background-color: aliceblue;
+      border-radius: 500px;
+    }
 
-  #HTML {
-    float: left;
-    padding: 10px;
-    border-radius: 100px;
-  }
+    ::-webkit-scrollbar {
+      display: none;
+    }
 
-  #c {
-    float: right;
-    padding: 10px;
-    border-radius: 100px;
-  }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      font-family: sans-serif;
+    }
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    font-family: sans-serif;
-  }
+    nav p {
+      background-color: transparent;
+      height: 30px;
+    }
 
-  nav p {
-    background-color: transparent;
-    height: 30px;
-  }
+    #carre a {
+      color: grey;
+      text-decoration: none;
+      padding: 10px;
+      align-items: center;
+      font-size: 20px;
+      transition-duration: 1s;
+      font-weight: bold;
+      position: relative;
+    }
 
-  #carre a {
-    color: grey;
-    text-decoration: none;
-    padding: 10px;
-    align-items: center;
-    font-size: 20px;
-    transition-duration: 1s;
-    font-weight: bold;
-    position: relative;
-  }
+    #carre a:hover {
+      background-color: transparent;
+      color: white;
+      border-radius: 30px;
+      background-color: rgba(107, 107, 107, 0.493);
+    }
+    .box {
+      transition: transform 1s;
+      width: 350px;
+      height: 350px;
+      margin-top: 100px;
+      margin-bottom: 200px;
+      margin-left: 100px;
+      margin-right: 60px;
+      text-align: center;
+      color: white;
+      font-size: 35px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    .box img {
+      width: 350px;
+      height: 350px;
+      border-radius: 20px;
+    }
+    .box:hover {
+      transform: scale(1.5);
+    }
 
-  #carre a:hover {
-    background-color: transparent;
-    color: white;
-    border-radius: 30px;
-    background-color: rgba(107, 107, 107, 0.493);
-  }
+    #projets {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-  @media only screen and (max-width: 900px) {
-    nav p a {
+    @media only screen and (max-width: 900px) {
+      nav p a {
       background-color: #f4f4f4;
       display: flex;
       flex-wrap: wrap;
@@ -99,27 +124,83 @@
 
     nav p {
       width: 100%;
-      margin-top: 0px;
+      margin-top: 10px;
+      margin-bottom: 100px;
     }
-  }
-</style>
-<script src=""></script>
-<!--commentaire-->
+    }
+  </style>
+  <script src=""></script>
+  <!--commentaire-->
 
-<body>
-  <div class="">
-    <span><strong>Contact :</strong> <br />adresse e-mail :
-      <a href="mailto:edouard.sence@etu.u-bordeaux.fr">
-        edouard.sence@etu.u-bordeaux.fr</a>
-      <br />téléphone : <a href="tel:+33651370047">06 51 37 00 47</a></span>
-    <h1>Edouard SENCE</h1>
-    <nav>
-      <p id="carre">
-        <a href="index.html">Mes compétences</a>
-        <a href="projets.html">Mes Projets</a>
-      </p>
-    </nav>
-  </div>
-</body>
-
+  <body>
+    <div class="">
+      <h1>Edouard SENCE</h1>
+      <nav>
+        <p id="carre">
+          <a href="index.html">Présentation</a>
+          <a href="projets.html">Mes Projets</a>
+          <a href="contact.html">Me contacter</a>
+        </p>
+      </nav>
+      <div id="projets">
+        <a
+          class="box"
+          href="RETEX/Projet pong.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          PONG
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png"
+            alt="pong"
+          />
+        </a>
+        <a
+          class="box"
+          href="RETEX/projet lowatem.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          LOWATEM
+          <img src="bin/lowatem-gui.png" alt="LOWATEM" />
+        </a>
+        <a
+          class="box"
+          href="RETEX/projet systeme.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          Installation de Poste
+          <img
+            src="https://st.depositphotos.com/1000128/2642/i/600/depositphotos_26429241-stock-photo-desktop-computer-with-touchscreen-interface.jpg"
+            alt="Installation de Poste"
+          />
+        </a>
+        <a
+          class="box"
+          href="RETEX/projet Base de donnée.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          Base de Donnée
+          <img
+            src="https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15493/0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3.png"
+            alt="Base de Donnée"
+          />
+        </a>
+        <a
+          class="box"
+          href="RETEX/projet web.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          Création de Site WEB
+          <img
+            src="https://enil.eu/wp-content/uploads/2015/05/Website.jpg"
+            alt="WEB"
+          />
+        </a>
+        <a
+          class="box"
+          href="RETEX/projet entreprise.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitV"
+        >
+          Création d'Entreprise
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261__340.jpg"
+            alt="Entreprise"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
